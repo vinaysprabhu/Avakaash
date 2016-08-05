@@ -1,0 +1,120 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+  <title></title>
+  <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+  -->
+
+  <!-- ionic/angularjs js -->
+  <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+  <!-- cordova script (this will be a 404 during development) -->
+  <script src="cordova.js"></script>
+  <!-- your app's js -->
+  <script src="js/controler.js"></script>
+
+</head>
+<body ng-app="starter">
+  <ion-content> 
+    <body style="background-color: #546E7A">   
+      <ion-slide-box>
+        <ion-slide>
+          <div class="bar bar-header bar-dark"  ng-controller="customersCtrl">
+           <a href="index.html#/app/home">
+            <button class="button icon-left ion-android-arrow-back"></button></a>
+            <div ng-controller="customersCtrl">
+              <ul>
+
+                <li ng-repeat="x in names">
+                <h1 class="title">{{x.opportunity_date}}</h1>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <br>  
+          <br> 
+          <div class="list list-inset" ng-controller="customersCtrl" align="left">
+            <ul>
+              <li ng-repeat="x in names">
+                <a class="item item-avatar" href="#" style="background-color: #546E7A">
+                  <img src="img/eventdescr.png">
+                  <h2><strong><font color="#E0E0E0">{{x.opportunity_title}}</font></strong></h2>
+                  <p><strong><font color="#B0BEC5">{{x.opportunity_desc}}</font></strong></p>
+                </a>
+              </li>
+            </ul>
+
+          </div>
+          <div class="tabs tabs-icon-top" style="background-color: #546E7A">
+          </div>
+        </ion-slide>
+        <ion-slide>
+          <div class="bar bar-header bar-dark"  ng-controller="customersCtrl2">
+            <a href="index.html#/app/home">
+            <button class="button icon-left ion-android-arrow-back"></button></a>
+            <div ng-controller="customersCtrl2">
+              <ul>
+                <li ng-repeat="x in names">
+                  <h1 class="title">{{x.opportunity_date}}</h1>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <br>  
+          <br> 
+          <div class="list list-inset" ng-controller="customersCtrl2" align="left">
+            <ul>
+              <li ng-repeat="x in names">
+                <a class="item item-avatar" href="#" style="background-color: #546E7A">
+                  <img src="img/eventdescr.png">
+                  <h2><strong><font color="#E0E0E0">{{x.opportunity_title}}</font></strong></h2>
+                  <p><strong><font color="#B0BEC5">{{x.opportunity_desc}}</font></strong></p>
+                </a>
+              </li>
+            </ul>
+
+          </div>
+          <div class="tabs tabs-icon-top" style="background-color: #546E7A">
+          </div>
+        </ion-slide>
+        <ion-slide>
+         <div class="bar bar-header bar-dark"  ng-controller="customersCtrl3">
+            <a href="index.html#/app/home">
+            <button class="button icon-left ion-android-arrow-back"></button></a>
+            <div ng-controller="customersCtrl3">
+              <ul>
+                <li ng-repeat="x in names">
+                  <h1 class="title">{{x.opportunity_date}}</h1>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <br>  
+          <br> 
+          <div class="list list-inset" ng-controller="customersCtrl3" align="left">
+            <ul>
+              <li ng-repeat="x in names">
+                <a class="item item-avatar" href="#" style="background-color: #546E7A">
+                  <img src="img/eventdescr.png">
+                  <h2><strong><font color="#E0E0E0">{{x.opportunity_title}}</font></strong></h2>
+                  <p><strong><font color="#B0BEC5">{{x.opportunity_desc}}</font></strong></p>
+                </a>
+              </li>
+            </ul>
+
+          </div>
+          <div class="tabs tabs-icon-top" style="background-color: #546E7A">
+          </div>
+        </ion-slide>
+      </ion-slide-box>
+    </body>
+  </ion-content>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<ion-view view-title="Profile" class="home-background-color">
+   <ion-content >
+   <ion-list>  
+      <div class="card" align = "center" >
+  <div class="item item-divider" style="background-color:#00695c">
+    <font face="verdana" color="white" size = "4"><b>{{name}}</b></font> <br>
+  </div>
+</div> 
+    <div class="list card" style="background-color:white">
+       <a  class="item item-icon-left" style="background-color:#00695c ">
+    <i class="icon ion-ios-person" ></i>
+    <b><font color=white>Username : </b> {{login_id}}</font>
+  </a>
+  
+  <a class="item item-icon-left" style="background-color:#00695c ">
+    <i class="icon ion-ios-photos"></i>
+    <b><font color=white>Subscription End : </b> 2017-05-22</font>
+  </a>
+  </div>
+      
+   <div class="list card" align = "Left" style="background-color:white ">
+  <a class="item item-icon-left" style="background-color:#00695c ">
+    <i class="icon ion-ios-telephone"></i>
+    <b><font color=white>Student Class : </b> {{class}}</font>
+    
+  </a>
+
+  <a class="item item-icon-left" style="background-color:#00695c ">
+    <i class="icon ion-email"></i>
+      <b><font color=white>Email id : </b> {{email}}</font>
+  </a>
+
+  <a class="item item-icon-left" style="background-color:#00695c ">
+    <i class="icon ion-ios-home"></i>
+      <b><font color=white>School : </b> {{school}}</font>
+  </a>
+  
+  <a class="item item-icon-left" style="background-color:#00695c ">
+    <i class="icon ion-android-car"></i>
+      <b><font color=white>Contact no :</b> {{phone}}</font>
+  </a>
+  
+  <a class="item item-icon-left" style="background-color:#00695c ">
+    <i class="icon ion-ios-paper"></i>
+     <b><font color=white>Date of Birth :</b> {{dob}}</font>
+  </a>
+     </div>
+   <div class="item range list card" style="background-color:#00695c" >
+  <i class="icon ion-volume-low" ></i>
+  <input type="range" name="volume">
+  <i class="icon ion-volume-high"></i>
+</div>
+  </ion-list>
+   
+  </ion-content>
+</ion-view>

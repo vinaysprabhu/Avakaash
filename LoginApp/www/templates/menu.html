@@ -1,0 +1,80 @@
+<ion-side-menus enable-menu-with-back-views="false">
+  <ion-side-menu-content>
+    <ion-nav-bar class="bar-dark"">
+      <ion-nav-back-button>
+      </ion-nav-back-button>
+      <ion-nav-buttons side="left">
+        <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
+        </button>
+      </ion-nav-buttons>
+      <ion-nav-buttons side="right">
+        <img src="img/notofication-32.png" height="30" width="30"> &nbsp;&nbsp; &nbsp;</img>
+        <img src="img/right_slider_icon.png" height="30" width="30" menu-toggle="right" height="40" width="40"> &nbsp;&nbsp; &nbsp;</img>
+        </button>
+      </ion-nav-buttons>
+    </ion-nav-bar>
+    <ion-nav-view name="menuContent" animation="slide-left-right">
+      </ion-nav-view>
+  </ion-side-menu-content>
+
+  <ion-side-menu side="left" width="myWidthValue + 200">
+    <ion-header-bar class="bar-profile">
+      <div class="profile">
+            <img class="profile-picture" src="img/IMG_20160314_020212.jpg" width="100" height="100" />
+            <h3 class="name">Avakaash</h3>
+        </div>
+    </ion-header-bar>
+    <ion-content class="custom">
+      <ion-list >
+        <ion-item menu-close href="#/app/home">
+          Home
+        </ion-item>
+         <ion-item menu-close href="#/app/playlists">
+          Profile
+        </ion-item>
+        <ion-item menu-close href="#/app/upgrade">
+          Upgarde
+        </ion-item>
+        <ion-item menu-close ng-click="logout()">
+          Logout
+        </ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-side-menu>
+  
+   <ion-side-menu side="right" width="myWidthValue + 120">
+<div>
+    <ion-content class="custom">
+      <ion-list>
+        <ion-item menu-close  href="actiwity.html">
+          &nbsp;&nbsp;
+        <img src="img/actiwity-544.png" align="center"/>
+        </ion-item>
+        <ion-item menu-close href="#/app/home">
+        &nbsp;&nbsp;
+        <img src="img/BrainE-54.png" align="center"/>
+        </ion-item>
+        <ion-item  menu-close href="#/app/browse">
+         &nbsp;&nbsp;
+         <img src="img/avakaashcomp-64.png" align="center"/>
+        </ion-item>
+         <ion-item  menu-close href="#/app/browse">
+         &nbsp;&nbsp;
+         <img src="img/study_abroad-64.png" align="center"/>
+        </ion-item>
+         <ion-item menu-close href="#/app/browse">
+         &nbsp;&nbsp;
+          <img src="img/entranceexam-64.png" align="center"/>
+        </ion-item>
+         <ion-item menu-close href="#/app/browse">
+         &nbsp;&nbsp;
+         <img src="img/carrierguide-64.png" align="center"/>
+        </ion-item>
+      </ion-list>
+    </ion-content>
+    </div>
+  </ion-side-menu>
+  
+  
+  
+</ion-side-menus>
